@@ -1,0 +1,60 @@
+<div th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+  <nav class="navbar navbar-expand-lg bg-light main-navigation">
+    <div class="container" style="max-width:1000px">
+      <a class="navbar-brand" href="/">
+        <img src="/images/mayak_logo.png" alt="" class="d-inline-block align-text-top">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Категории товаров
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Добавить
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/product-add">Страницу товара</a></li>
+              <li><a class="dropdown-item" href="/category-add">Категорию товара</a></li>
+            </ul>
+          </li>
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Найти товар" aria-label="Recipient's username"
+                   aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger" type="button" id="button-addon2">Поиск</button>
+          </div>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="№">Корзина</a>
+          </li>
+
+          <span class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/login">Вход</a>
+          </span>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/register">Регистрация</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

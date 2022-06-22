@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/demo-0.0.1-SNAPSHOT.
+web: java -jar build/libs/ecommerce-0.0.1-SNAPSHOT
